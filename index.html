@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agentimate — the agent that animates your ideas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="/examples/assets/css/styles.css" rel="stylesheet">
+  <link href="/examples/agentimate-landing/styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Additive fireflies background -->
+  <div id="bg-animation">
+    <div id="bg-circle"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">agentimate<span class="dot">.com</span></div>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#cta" class="btn btn-outline">Get started</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="cta">
+      <h1 class="hero-title">
+        Design what you'll <span class="em">build</span> — faster.
+      </h1>
+      <p class="sub">Agentimate is your AI design agent — the agent that animates your ideas.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#features">Start designing</a>
+        <a class="btn btn-ghost" href="#showcase">See it in action</a>
+      </div>
+      <div class="hero-marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>design · animate · iterate · generate · refine ·</span>
+          <span>design · animate · iterate · generate · refine ·</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="feature-grid">
+        <article class="feature">
+          <h3>Natural prompts → motion-ready designs</h3>
+          <p>Describe your idea. Get layered, animatable layouts ready for dev handoff.</p>
+        </article>
+        <article class="feature">
+          <h3>Cooler animations out of the box</h3>
+          <p>Powered by Anime.js timelines, text splitting, SVG drawing, and additive visuals.</p>
+        </article>
+        <article class="feature">
+          <h3>Editable timelines</h3>
+          <p>Tweak easing, durations, and composition with instant previews.</p>
+        </article>
+        <article class="feature">
+          <h3>Export anywhere</h3>
+          <p>Copy code or export assets for Web, React, Canvas, and SVG workflows.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase" id="showcase">
+      <h2>Showcase</h2>
+      <div class="cards">
+        <div class="card">Seamless loops</div>
+        <div class="card">Text split effects</div>
+        <div class="card">SVG line drawing</div>
+        <div class="card">Layered transforms</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Agentimate — design agent</span>
+    <a href="#cta">Get started</a>
+  </footer>
+
+  <script type="module" src="/examples/agentimate-landing/index.js"></script>
+</body>
+</html>
+
