@@ -1,0 +1,26 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".",
+  "installCommand": "npm install",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/examples/agentimate-landing/index.html"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/examples/assets/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/dist/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
+}
